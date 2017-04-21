@@ -1,12 +1,13 @@
-Login-AzureRmAccount
-Get-AzureRmSubscription
-Select-AzureRmSubscription -SubscriptionName "xxxxxxxx"
-
+$subscriptionname = 'xxxxxxxxxxx'
 $setuplocation = 'East US'
 $resourcegroup = 'EastUS_RG'
 $yourisppublicip = 'xxx.xxx.xxx.xxx'
 $sharedkey = 'xxxxxxxxxxxxxxxxx'
 $azurepubipdnsname = 'xxxxxxxxx'
+
+Login-AzureRmAccount
+Get-AzureRmSubscription
+Select-AzureRmSubscription -SubscriptionName $subscriptionname
 
 New-AzureRmResourceGroup -Name $resourcegroup -Location $setuplocation
 
