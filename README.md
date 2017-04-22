@@ -3,7 +3,7 @@ Setup script for Azure S2S VPN and config for AVM Fritz!Box 7490
 
 If it breaks stuff or it doesnt work, i take no responsibility. I assume some Azure knowledge to use the details here.
 
-Run the commands from the powershell script one at a time. You will need to install the Azure Powershell extensions beforehand.
+Run the commands from the 'azures2svpn-setup.ps1' powershell script one at a time. You will need to install the Azure Powershell extensions beforehand.
 
 In the Fritz!Box 7490 config file edit the lines before uploading it to your VPN settings page on the router:
 - replace '123.457.789.00' with your Azure Public IP on your Virtual Network Gateway.
